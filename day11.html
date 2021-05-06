@@ -2,209 +2,239 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <title>Music store</title>
+  <title>Music store</title>
 </head>
 <style>
 
+body{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.badge{
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  font-size: 15px;
+  background-color: rgb(223, 119, 0);
+}
+.lolt{
+  width: 500px;
+  height: 500px;
+}
+.list-group{
+  padding: 20px;
+  margin: 10px;
+}
+
+/* img{
+  width: auto;
+  height: auto;
+} */
 
 </style>
 
 <body>
-    <header>
-        <nav class="navbar navbar-white bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">My favourite music</a>
+  <header>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Library</li>
+      </ol>
+    </nav>
+  </header>
+  <main role="main">
+    <section class="jambotron text-center">
+      <div class="container">
+        <img src="https://www.spirit-of-metal.com/les%20goupes/E/Eisbrecher/pics/1571234_logo.png">
+        <!-- <h1 class="jumbotron-heading">Eisbrecher</h1> -->
+        <p class="lead text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus possimus laudantium
+          pariatur iure
+          expedita. Ipsam, est? Quisquam, voluptas nam rem possimus facilis illum quae laborum, consectetur
+          nesciunt eius, dolorum quia?</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Website</a>
+          <a href="#" class="btn btn-secondary my-2">Listen</a>
+        </p>
+      </div>
+    </section>
+    <div class="row">
+      <div class="col col-sm-12 col-md-4 col-lg-3 mb-3">
+        <span class="badge text-dark">Electronic</span>
+        <img
+          src="https://img.discogs.com/K0USQu9kFvUR7pPSgBJz0Txx5Ag=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-8399423-1460897830-8859.jpeg.jpg"
+          class="card-img-top" alt="Eisbrecher">
+        <div class="card-body">
+          <h5 class="card-title">Eisbrecher</h5>
+          <p class="genre">Electronic</p>
+          <p class="year">2004</p>
+          <p class="genre"></p>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="col col-sm-12 col-md-4 col-lg-3 mb-3">
+        <span class="badge text-dark">Electronic</span>
+        <img
+          src="https://img.discogs.com/M1zuvE0DLEwPM29fJOhEX9Ru0Q4=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2254598-1351572015-9607.jpeg.jpg"
+          class="card-img-top" alt="Eiszeit">
+        <div class="card-body">
+          <h5 class="card-title">Eiszeit</h5>
+          <p class="genre">Electronic, Rock</p>
+          <p class="year">2010</p>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="col col-sm-12 col-md-4 col-lg-3 mb-3">
+        <span class="badge text-dark">Rock</span>
+        <img
+          src="https://img.discogs.com/95hZTZWvMNvR3MsIV7S3iLJOBBw=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3382896-1328242772.jpeg.jpg"
+          class="card-img-top" alt="Die Hölle Muss Warten">
+        <div class="card-body">
+          <h5 class="card-title">Die Hölle Muss Warten</h5>
+          <p class="genre">Electronic, Rock</p>
+          <p class="year">2012</p>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="col col-sm-12 col-md-4 col-lg-3 mb-3">
+        <span class="badge text-dark">Rock</span>
+        <img
+          src="https://img.discogs.com/_CeH4FSgO9GRIY_r9IvX0YpNuuI=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-6555772-1422111968-9452.jpeg.jpg"
+          class="card-img-top" alt="Schock">
+        <div class="card-body">
+          <h5 class="card-title">Schock</h5>
+          <p class="genre">Electronic, Rock</p>
+          <p class="year">2015</p>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="col col-sm-12 col-md-4 col-lg-3 mb-3">
+        <span class="badge text-dark">Rock</span>
+        <img
+          src="https://img.discogs.com/2Tv4odtoCoS6YjKzLIGzjuNjbHQ=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-10755157-1503737157-9533.jpeg.jpg"
+          class="card-img-top" alt="Sturmfahrt">
+        <div class="card-body">
+          <h5 class="card-title">Sturmfahrt</h5>
+          <p class="genre">Electronic, Rock</p>
+          <p class="year">2017</p>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="col col-sm-12 col-md-4 col-lg-3 mb-3">
+        <span class="badge text-dark">Rock</span>
+        <img
+          src="https://img.discogs.com/kH6zE0ERlBE28t4AKQgCVbyLS_Q=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-16112110-1603630392-6303.jpeg.jpg"
+          class="card-img-top" alt="Schicksalsmelodien">
+        <div class="card-body">
+          <h5 class="card-title">Schicksalsmelodien</h5>
+          <p class="genre">Rock</p>
+          <p class="year">2020</p>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+
+    <section class="jambotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Lord of the lost</h1>
+      </div>
+    </section>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img class="lolt"
+            src="https://img.discogs.com/vvXP2_fj2Qaa0vsA0rSMWTyD0pU=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-12355801-1535403954-4630.jpeg.jpg"
+              class="card-img-top" alt="Thornstar">
+          <div class="card-body">
+            <h5 class="card-title">Thornstar</h5>
+            <p class="genre">Rock</p>
+            <p class="year">2018</p>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Your email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
-        </nav>
-    </header>
-    <main role="main">
-        <section class="jambotron text-center">
-            <div class="container">
-                <h1 class="jumbotron-heading">Eisbrecher</h1>
-                <p class="lead text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus possimus laudantium pariatur iure
-                    expedita. Ipsam, est? Quisquam, voluptas nam rem possimus facilis illum quae laborum, consectetur
-                    nesciunt eius, dolorum quia?</p>
-                    <p>
-                    <a href="#" class="btn btn-primary my-2">Website</a>
-                    <a href="#" class="btn btn-secondary my-2">Listen</a>
-                </p>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Your name</label>
+              <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name">
             </div>
-        </section>
-        <div class="row">
-            <div class="col col-sm-12 col-md-4 col-lg-3 mb-3">
-              <img src="https://img.discogs.com/K0USQu9kFvUR7pPSgBJz0Txx5Ag=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-8399423-1460897830-8859.jpeg.jpg" class="card-img-top" alt="Eisbrecher">
-              <div class="card-body">
-                <h5 class="card-title">Eisbrecher</h5>
-                <p class="genre">Electronic</p>
-                  <p class="year">2004</p>
-                <p class="genre"></p>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Your review</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-            <div class="col col-sm-12 col-md-4 col-lg-3 mb-3">
-              <img src="https://img.discogs.com/M1zuvE0DLEwPM29fJOhEX9Ru0Q4=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2254598-1351572015-9607.jpeg.jpg" class="card-img-top" alt="Eiszeit">
-              <div class="card-body">
-                <h5 class="card-title">Eiszeit</h5>
-                <p class="genre">Electronic, Rock</p>
-                  <p class="year">2010</p>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="col col-sm-12 col-md-4 col-lg-3 mb-3">
-              <img src="https://img.discogs.com/95hZTZWvMNvR3MsIV7S3iLJOBBw=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3382896-1328242772.jpeg.jpg" class="card-img-top" alt="Die Hölle Muss Warten">
-              <div class="card-body">
-                <h5 class="card-title">Die Hölle Muss Warten</h5>
-                <p class="genre">Electronic, Rock</p>
-                  <p class="year">2012</p>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="col col-sm-12 col-md-4 col-lg-3 mb-3">
-                <img src="https://img.discogs.com/_CeH4FSgO9GRIY_r9IvX0YpNuuI=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-6555772-1422111968-9452.jpeg.jpg" class="card-img-top" alt="Schock">
-                <div class="card-body">
-                  <h5 class="card-title">Schock</h5>
-                  <p class="genre">Electronic, Rock</p>
-                  <p class="year">2015</p>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              <div class="col col-sm-12 col-md-4 col-lg-3 mb-3">
-                <img src="https://img.discogs.com/2Tv4odtoCoS6YjKzLIGzjuNjbHQ=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-10755157-1503737157-9533.jpeg.jpg" class="card-img-top" alt="Sturmfahrt">
-                <div class="card-body">
-                  <h5 class="card-title">Sturmfahrt</h5>
-                  <p class="genre">Electronic, Rock</p>
-                  <p class="year">2017</p>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              <div class="col col-sm-12 col-md-4 col-lg-3 mb-3">
-                <img src="https://img.discogs.com/kH6zE0ERlBE28t4AKQgCVbyLS_Q=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-16112110-1603630392-6303.jpeg.jpg" class="card-img-top" alt="Schicksalsmelodien">
-                <div class="card-body">
-                  <h5 class="card-title">Schicksalsmelodien</h5>
-                  <p class="genre">Rock</p>
-                  <p class="year">2020</p>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
           </div>
-          
-          <section class="jambotron text-center">
-            <div class="container">
-                <h1 class="jumbotron-heading">Lord of the lost</h1>
-            </div>
-        </section>
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="card">
-                <img src="https://img.discogs.com/vvXP2_fj2Qaa0vsA0rSMWTyD0pU=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-12355801-1535403954-4630.jpeg.jpg" class="card-img-top" alt="Thornstar">
-                <div class="card-body">
-                  <h5 class="card-title">Thornstar</h5>
-                  <p class="genre">Rock</p>
-                  <p class="year">2018</p>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Your email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Your name</label>
-                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Your review</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col">
-              <div class="card">
-                <img src="https://img.discogs.com/Ot78rPtLrGbCL0LCPxq6X_jKGx8=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-8831096-1469689529-5973.jpeg.jpg" class="card-img-top" alt="Empyrean">
-                <div class="card-body">
-                  <h5 class="card-title">Empyrean</h5>
-                  <p class="genre">Rock</p>
-                  <p class="year">2016</p>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Your email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Your name</label>
-                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Your review</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-    </main>
-
-    <!-- <div class="container">
-        <h1>Welcome</h1>
-        <div class="row" id="albums">
-            <div class="col-6 col-md-3 col-lg-2">
-                <img src="C:\Users\Alina\Desktop\eis.jpg" alt="album cover" class="img-fluid" />
-                <p>Eisbrecher</p>
-            </div>
         </div>
-        <div class="row">
-            <div class="col-6 col-md-3 col-lg-2">
-                <img src="C:\Users\Alina\Desktop\eis.jpg" alt="album cover" class="img-fluid" />
-                <p>Eisbrecher</p>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img class="lolt"
+            src="https://img.discogs.com/Ot78rPtLrGbCL0LCPxq6X_jKGx8=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-8831096-1469689529-5973.jpeg.jpg"
+            class="card-img-top" alt="Empyrean">
+          <div class="card-body">
+            <h5 class="card-title">Empyrean</h5>
+            <p class="genre">Rock</p>
+            <p class="year">2016</p>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Your email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
-        </div>
-        <div class="row">
-            <div class="col-6 col-md-3 col-lg-2">
-                <img src="C:\Users\Alina\Desktop\eis.jpg" alt="album cover" class="img-fluid" />
-                <p>Eisbrecher</p>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Your name</label>
+              <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name">
             </div>
-        </div>
-        <div class="row">
-            <div class="col-6 col-md-3 col-lg-2">
-                <img src="C:\Users\Alina\Desktop\eis.jpg" alt="album cover" class="img-fluid" />
-                <p>Eisbrecher</p>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Your review</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-6 col-md-3 col-lg-2">
-                <img src="C:\Users\Alina\Desktop\eis.jpg" alt="album cover" class="img-fluid" />
-                <p>Eisbrecher</p>
-            </div>
+      </div>
+
+      <!-- <section class="jambotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Worst album list!</h1>
+          <img
+            src="data:image/jpeg;base64,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"
+            class="img-worst" alt="worstAlbum">
         </div>
-        <div class="row">
-            <div class="col-6 col-md-3 col-lg-2">
-                <img src="C:\Users\Alina\Desktop\eis.jpg" alt="album cover" class="img-fluid" />
-                <p>Eisbrecher</p>
-            </div>
-        </div>
+      </section> -->
+      <div class="list-group">
+        <h5 class="list-title">Worst album list!</h5>
+        <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+          The current button
+        </button>
+        <button type="button" class="list-group-item list-group-item-action">A second item</button>
+        <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+        <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
+        <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item</button>
+      </div>
+  </main>
 
-    </div> -->
 
 
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
 
 
 </body>
